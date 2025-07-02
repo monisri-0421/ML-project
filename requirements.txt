@@ -1,0 +1,9 @@
+tensorflow
+mlflow
+dvc
+fastapi
+uvicorn
+gradio
+python-multipart
+pandas
+scikit-learn
