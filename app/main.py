@@ -1,6 +1,5 @@
 from fastapi import FastAPI, UploadFile, File
 from src.predict import predict_image
-import uvicorn
 
 app = FastAPI()
 
@@ -10,5 +9,3 @@ async def predict(file: UploadFile = File(...)):
     result = predict_image(contents)
     return {"prediction": result}
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
