@@ -22,7 +22,8 @@ def train():
     val_data = datagen.flow_from_directory('./data/dataset', target_size=(224,224),
                                            batch_size=32, subset='validation', class_mode='binary')
     model.fit(train_data, epochs=3, validation_data=val_data)
-    model.save('models/model.h5')
+    model.save("models/")  # SavedModel format: saves as a folder
+
 
     a = 100
 if __name__ == "__main__":

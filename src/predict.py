@@ -6,9 +6,12 @@ import os
 
 # ✅ Dynamically build correct path to model
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODEL_PATH = os.path.join(BASE_DIR, "models", "model.h5")
+MODEL_PATH = os.path.join(BASE_DIR, "models")
+
 
 model = tf.keras.models.load_model(MODEL_PATH)
+
+
 
 def predict_image(image_bytes):
     img = Image.open(io.BytesIO(image_bytes)).resize((224, 224))
