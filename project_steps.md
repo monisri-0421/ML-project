@@ -43,12 +43,12 @@ Output was either cat or dog based on threshold > 0.5.
 ## Step 8: GitHub Repo Structure
 ML-project/
 │
-├── notebooks/         # Jupyter Notebooks for training and testing
-├── models/            # Saved trained models (.h5 files)
-├── images/            # Screenshots for documentation
-├── PROJECT_STEPS.md   # Step-by-step process (this file)
-├── README.md          # Main project overview
-├── requirements.txt   # Python dependencies
+   ├── notebooks/         # Jupyter Notebooks for training and testing
+   ├── models/            # Saved trained models (.h5 files)
+     ├── images/            # Screenshots for documentation
+   ├── PROJECT_STEPS.md   # Step-by-step process (this file)
+   ├── README.md          # Main project overview
+   ├── requirements.txt   # Python dependencies
 
 
 ## Step 9: Deployment (Optional)
