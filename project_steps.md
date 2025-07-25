@@ -6,7 +6,7 @@ This project is a binary image classification task where we use a Convolutional 
 ## Step 2: Data Collection
 dataset: kaggle
 - Downloaded the dataset (train.zip)
-- Extracted images
+- Extracted images 
 - Divided them into training and validation sets
 
 ## Step 3: Data Preprocessing
